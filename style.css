@@ -10,6 +10,10 @@
   border-top: 2px solid gold;
 }
 
+.navbar {
+  border-bottom: 2px solid gold;
+}
+
 body {
   padding-bottom: 80px; /* Adjust this value based on your footer's height */
 }
