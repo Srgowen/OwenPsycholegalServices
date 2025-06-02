@@ -1,31 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="style.css" 
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <title>Services - Owen Psycholegal Services</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-    <title>Services - OwenPsycholegalservices</title>
-  </head>
-  <body class="text-light d-flex flex-column min-vh-100">
-    <main class="flex-grow-1">
+    .services-section {
+      padding-top: 140px;
+      padding-bottom: 60px;
+    }
+
+    .services-section h2,
+    .services-section h3 {
+      color: #0056b3;
+      font-weight: 700;
+    }
+
+    .services-section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .services-section ul li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .services-section ul li::before {
+      content: "\f058";
+      font-family: "Bootstrap-icons";
+      position: absolute;
+      left: 0;
+      color: #198754;
+    }
+
+    .footer {
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+
+<body class="text-dark d-flex flex-column min-vh-100">
+  <main class="flex-grow-1">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top shadow-sm">
       <div class="container">
-        <a href="index.html" class="navbar-brand fs-2">Owen Psycholegal Services</a>
-
+        <a href="index.html" class="navbar-brand fs-3 fw-bold">Owen Psycholegal Services</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -34,66 +69,66 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        
         <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a href="index.html" class="nav-link">Home</a>
             </li>
-              <li class="nav-item">
-                <a href="about.html" class="nav-link">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="services.html" class="nav-link">Services</a>
-              </li>
-              <li class="nav-item">
-                <a href="testcontact.html" class="nav-link">Contact</a>
-              </li>
-            </ul>
-      </div>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="services.html" class="nav-link active">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="testcontact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <!-- Cervices Section -->
-    <section class="contact-section" style="padding-top: 150px;">
+    <!-- Services Section -->
+    <section class="services-section">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <h2>Services Offered</h2>
-            <p>
-              Below is a list of evaluations offered by my office. If you are unsure about the exact type of evaluation services needed for your client, contact me for a complimentary consultation to discuss how I can best meet your needs.
+          <div class="col-md-10 mx-auto">
+            <h2 class="mb-4">Services Offered</h2>
+            <p class="mb-4">
+              Below is a list of psychological evaluations offered. If you are unsure which type of service is needed for your client or case, I offer a complimentary consultation to determine how I can best meet your needs.
             </p>
+
+            <h3 class="mt-4">Forensic Evaluations – Adults</h3>
             <ul>
-              <li>Competency/capacity to stand trial</li>
+              <li>Competency / capacity to stand trial</li>
               <li>Not guilty by reason of insanity (NGRI)</li>
               <li>Diminished capacity and sentencing mitigation</li>
               <li>Civil involuntary commitment</li>
               <li>Sexual and violence risk assessment</li>
             </ul>
-            <h3>Evaluations for Court Involved Juvenile Offenders</h3>
+
+            <h3 class="mt-5">Forensic Evaluations – Juveniles</h3>
             <ul>
-              <li>Juvenile transfer/waiver to adult court</li>
-              <li>Sexual violence risk assessment</li>
+              <li>Juvenile transfer / waiver to adult court</li>
+              <li>Sexual and violence risk assessment</li>
               <li>School-based threat assessment</li>
-              <li>Juvenile resentencing/”second look” for life without parole youth</li>
+              <li>Juvenile resentencing / “second look” for life without parole cases</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-    
-    <!-- Footer -->
- <!-- Footer -->
- <footer class="footer">
-  <div class="container">
-    <p class="text-center mb-0">Copyright &copy; 2025 OwenPsycholegalServices.LLC</p>
-  </div>
-</footer>
+  </main>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <!-- Footer -->
+  <footer class="footer bg-white py-4 mt-auto">
+    <div class="container text-center">
+      <p class="mb-0 text-secondary">&copy; 2025 Owen Psycholegal Services, LLC</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
-
 

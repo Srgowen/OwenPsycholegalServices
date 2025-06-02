@@ -1,28 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Contact - OwenPsycholegalservices</title>
-  </head>
-  <body class="text-light d-flex flex-column min-vh-100">
-    <main class="flex-grow-1">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <title>Contact - Owen Psycholegal Services</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .contact-section {
+      padding-top: 140px;
+      padding-bottom: 60px;
+    }
+
+    h2, h4 {
+      color: #0056b3;
+      font-weight: 700;
+    }
+
+    .form-container {
+      background: #f8f9fa;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .btn-light {
+      background-color: #007bff;
+      color: #fff;
+      font-weight: 500;
+    }
+
+    .btn-light:hover {
+      background-color: #0056b3;
+    }
+
+    .footer {
+      border-top: 1px solid #ddd;
+    }
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Confirmation message styles */
+    #confirmationMessage {
+      display: none;
+      margin-top: 1rem;
+      padding: 1rem;
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body class="text-dark d-flex flex-column min-vh-100">
+  <main class="flex-grow-1">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top shadow-sm">
       <div class="container">
-        <a href="index.html" class="navbar-brand fs-2">Owen Psycholegal Services</a>
+        <a href="index.html" class="navbar-brand fs-3 fw-bold">Owen Psycholegal Services</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -31,80 +87,125 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        
         <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a href="index.html" class="nav-link">Home</a>
             </li>
-              <li class="nav-item">
-                <a href="about.html" class="nav-link">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="services.html" class="nav-link">Services</a>
-              </li>
-              <li class="nav-item">
-                <a href="testcontact.html" class="nav-link">Contact</a>
-              </li>
-            </ul>
-      </div>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="services.html" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="testcontact.html" class="nav-link active">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <!-- Contact Section -->
-    <section class="contact-section"style="padding-top: 150px;">
-      <div class="container">
-        <h2>Contact Us</h2>
-        <p class="lead text-center">We'd love to hear from you! Please fill out the form below and we'll get in touch with you as soon as possible.</p>
-
-        <form action="https://formspree.io/f/mbllqjbq" method="POST">
-            <div class="mb-3">
-              <label for="name" class="form-label">Full Name</label>
-              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required />
-            </div>
-          
-            <div class="mb-3">
-              <label for="email" class="form-label">Email Address</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required />
-            </div>
-          
-            <div class="mb-3">
-              <label for="subject" class="form-label">Subject</label>
-              <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject of your message" required />
-            </div>
-          
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your message" required></textarea>
-            </div>
-          
-            <button type="submit" class="btn btn-light w-100">Send Message</button>
-          </form>
-          
-      </div>
-    </section>
+    <!-- Contact Form Section -->
     <section class="contact-section">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h4>Contact Information</h4>
-            <ul>
-              <li><strong>Email:</strong> irina.owen.psyd@gmail.com</li>
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-8">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <p class="text-center mb-4">
+              We'd love to hear from you. Please fill out the form below, and we'll get in touch as soon as possible.
+            </p>
+            <div class="form-container">
+              <form id="contactForm" action="https://formspree.io/f/mbllqjbq" method="POST">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="name" name="name" required />
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="email" name="email" required />
+                </div>
+
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input type="text" class="form-control" id="subject" name="subject" required />
+                </div>
+
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-light w-100">Send Message</button>
+
+                <!-- Confirmation message -->
+                <div id="confirmationMessage" role="alert" aria-live="polite" tabindex="0">
+                  Thank you for reaching out! Your message has been sent successfully.
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <h4 class="mb-3">Contact Information</h4>
+            <ul class="text-muted">
+              <li><i class="bi bi-envelope-fill me-2"></i><strong>Email:</strong> irina.owen.psyd@gmail.com</li>
+              <!-- Add phone, address, etc., if available -->
             </ul>
           </div>
         </div>
       </div>
     </section>
   </main>
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <p class="text-center mb-0">Copyright &copy; 2025 OwenPsycholegalServices.LLC</p>
-      </div>
-    </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <!-- Footer -->
+  <footer class="footer bg-white py-4 mt-auto">
+    <div class="container text-center">
+      <p class="mb-0 text-secondary">&copy; 2025 Owen Psycholegal Services, LLC</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Confirmation message script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('contactForm');
+      const confirmationMessage = document.getElementById('confirmationMessage');
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+
+        try {
+          const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+              'Accept': 'application/json'
+            }
+          });
+
+          if (response.ok) {
+            form.reset();
+            confirmationMessage.style.display = 'block';
+            confirmationMessage.focus();
+          } else {
+            alert('There was an issue sending your message. Please try again later.');
+          }
+        } catch (error) {
+          alert('Error sending form. Please check your connection and try again.');
+        }
+      });
+    });
+  </script>
+</body>
 </html>
+
+
