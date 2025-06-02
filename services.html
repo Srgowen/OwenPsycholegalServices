@@ -17,6 +17,8 @@
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f7f9fc;
+      color: #222;
     }
 
     .services-section {
@@ -24,33 +26,81 @@
       padding-bottom: 60px;
     }
 
-    .services-section h2,
-    .services-section h3 {
-      color: #0056b3;
-      font-weight: 700;
+    .services-section h2 {
+      color: #004085;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
 
-    .services-section ul {
+    .services-section p.lead {
+      max-width: 700px;
+      margin: 0 auto 3rem auto;
+      font-size: 1.15rem;
+      color: #555;
+      text-align: center;
+    }
+
+    .service-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 2rem 2.5rem;
+      box-shadow: 0 8px 20px rgb(0 0 0 / 0.1);
+      margin-bottom: 2.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 30px rgb(0 0 0 / 0.15);
+    }
+
+    .service-card h3 {
+      color: #007bff;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      border-bottom: 3px solid #007bff;
+      padding-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    ul.service-list {
       list-style: none;
       padding-left: 0;
     }
 
-    .services-section ul li {
+    ul.service-list li {
       position: relative;
-      padding-left: 1.5rem;
-      margin-bottom: 0.5rem;
+      padding-left: 2.5rem;
+      margin-bottom: 0.9rem;
+      font-size: 1.05rem;
+      color: #333;
+      transition: color 0.3s ease;
+      cursor: default;
     }
 
-    .services-section ul li::before {
-      content: "\f058";
-      font-family: "Bootstrap-icons";
+    ul.service-list li::before {
+      content: "\f058"; /* Bootstrap check icon */
+      font-family: "Bootstrap Icons";
       position: absolute;
       left: 0;
-      color: #198754;
+      top: 3px;
+      color: #28a745; /* Bootstrap success green */
+      font-size: 1.2rem;
+      line-height: 1;
     }
 
+    ul.service-list li:hover {
+      color: #007bff;
+    }
+
+    /* Footer */
     .footer {
       border-top: 1px solid #ddd;
+      background: white;
     }
   </style>
 </head>
@@ -91,30 +141,30 @@
     <!-- Services Section -->
     <section class="services-section">
       <div class="container">
-        <div class="row">
-          <div class="col-md-10 mx-auto">
-            <h2 class="mb-4">Services Offered</h2>
-            <p class="mb-4">
-              Below is a list of psychological evaluations offered. If you are unsure which type of service is needed for your client or case, I offer a complimentary consultation to determine how I can best meet your needs.
-            </p>
+        <h2>Services Offered</h2>
+        <p class="lead">
+          Below is a list of psychological evaluations offered. If you are unsure which type of service is needed for your client or case, I offer a complimentary consultation to determine how I can best meet your needs.
+        </p>
 
-            <h3 class="mt-4">Forensic Evaluations – Adults</h3>
-            <ul>
-              <li>Competency / capacity to stand trial</li>
-              <li>Not guilty by reason of insanity (NGRI)</li>
-              <li>Diminished capacity and sentencing mitigation</li>
-              <li>Civil involuntary commitment</li>
-              <li>Sexual and violence risk assessment</li>
-            </ul>
+        <div class="service-card">
+          <h3>Forensic Evaluations – Adults</h3>
+          <ul class="service-list">
+            <li>Competency / capacity to stand trial</li>
+            <li>Not guilty by reason of insanity (NGRI)</li>
+            <li>Diminished capacity and sentencing mitigation</li>
+            <li>Civil involuntary commitment</li>
+            <li>Sexual and violence risk assessment</li>
+          </ul>
+        </div>
 
-            <h3 class="mt-5">Forensic Evaluations – Juveniles</h3>
-            <ul>
-              <li>Juvenile transfer / waiver to adult court</li>
-              <li>Sexual and violence risk assessment</li>
-              <li>School-based threat assessment</li>
-              <li>Juvenile resentencing / “second look” for life without parole cases</li>
-            </ul>
-          </div>
+        <div class="service-card">
+          <h3>Forensic Evaluations – Juveniles</h3>
+          <ul class="service-list">
+            <li>Juvenile transfer / waiver to adult court</li>
+            <li>Sexual and violence risk assessment</li>
+            <li>School-based threat assessment</li>
+            <li>Juvenile resentencing / “second look” for life without parole cases</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -131,4 +181,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
