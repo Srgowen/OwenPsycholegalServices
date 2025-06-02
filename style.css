@@ -3,7 +3,7 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #0205a8;
+  background-color: #001f3f; /* dark navy */
   color: white;
   text-align: center;
   padding: 20px 0;
@@ -12,9 +12,11 @@
 
 .navbar {
   border-bottom: 2px solid gold;
+  
 }
 
 body {
-  padding-bottom: 80px; /* Adjust this value based on your footer's height */
+  background-color: #001f3f; /* dark navy */
+  color: #f0f0f0;
+  padding-bottom: 80px; /* keep for footer space */
 }
-
